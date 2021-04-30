@@ -1,14 +1,14 @@
 import React from 'react';
 
-const MobileNumberComponent = () => {
+const MobileNumberComponent = ({text, labelText}) => {
     return (
         <div>
-            <label>Mobile Number</label>
+            <label>{labelText}</label>
             <br />
             <input
                 className="input"
                 type="text"
-                placeholder="Enter 10 digit mobile number"
+                placeholder={text}
                 maxLength="10"
             />
         </div>
