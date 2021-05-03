@@ -1,18 +1,13 @@
-import React from 'react';
+import React from "react";
+import Form from "react-bootstrap/Form";
 
-const MobileNumberComponent = ({text, labelText}) => {
-    return (
-        <div>
-            <label>{labelText}</label>
-            <br />
-            <input
-                className="input"
-                type="text"
-                placeholder={text}
-                maxLength="10"
-            />
-        </div>
-    )
-}
+const MobileNumberComponent = ({ text, labelText }) => {
+  return (
+    <Form>
+      <Form.Label>{labelText}</Form.Label>
+      <Form.Control type="text" placeholder={text} />
+    </Form>
+  );
+};
 
 export default MobileNumberComponent;
